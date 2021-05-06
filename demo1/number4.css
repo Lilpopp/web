@@ -1,0 +1,143 @@
+.top{
+ 
+height: 50px;
+font-size: 15px;
+color: #b0b0b0;
+background: #333
+
+}
+.head-portrait{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.head{
+    padding: 0;
+    margin:0;
+    position:relative;
+    right:20px;
+    top: 15px; 
+}
+.head1{
+    float: right;
+    padding-right: 40px;
+    
+}
+.head2{
+    float: right;
+    padding-right: 40px;
+    
+}
+a{
+    position: relative;
+    margin-top: 10px;
+    color: aqua;
+}
+.head3{
+    float: right;
+    padding-right: 40px;
+    
+}
+.head4{
+    float: right;
+    padding-right: 40px;
+    
+}
+li{
+    list-style: none;
+}
+body{
+    margin: 0 ;
+ background: color #1a0303;;
+}
+#page5{
+    height:450px; 
+    width: 430px;
+    background-color: rgb(252, 252, 252);
+    margin: 20px 0 0 0 ;
+  position: fixed;
+  right: 20px;
+  z-index: 0;
+  text-align: center
+}
+#page1{
+    height:800px; 
+    width: 1024px;
+    background-color: rgb(252, 252, 252);
+    margin: 20px;
+    position: relative;
+    z-index:100;
+
+}
+#page2{
+    height: 600px; 
+    width: 1024px;
+    background-color: rgb(252, 252, 252);
+    margin: 20px;
+    position: relative;
+    z-index:100;
+}
+#page3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height:400px; 
+    width: 1024px;
+    background-color: rgb(252, 252, 252);
+    margin: 20px;
+    position: relative;
+    z-index:100;
+}
+#page4{
+    height:500px; 
+    width: 1024px;
+    background-color: rgb(252, 252, 252);
+    margin: 20px;
+    position: relative;
+    z-index:100;
+}
+.zhushi{
+    position: absolute;
+    bottom: 100px;
+}
+.box2{
+    flex: 1;
+    border:1px solid #000;
+    padding: 20px;
+    margin: 20px;
+    width: 80px;
+    height: 95px;
+   
+}
+img{
+    align-items: flex-end;
+}
+.list1{
+    background-color: black;
+}
+.list2{
+    background-color:rgb(232,232,232) ;
+}
+table{
+    width: 800px;
+}
+footer{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    align-items: center;
+    font-size: 14px;
+}
+.note{
+    color: rgb(148, 138, 138);
+    font-style: inherit;
+}
+.button {
+    background-color: #5aa4e9;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+}
