@@ -1,0 +1,100 @@
+table td {
+    padding: 0 15px;
+  }
+  table tr {
+    background-color: white;
+  }
+
+  table tr:nth-child(1) {
+    background-color: rgb(12, 0, 0) !important;
+    color: white !important;
+  }
+
+  table tr:nth-child(2n+1) {
+    background-color: white;
+  }
+
+  table tr:nth-child(-n+4) {
+    color: red;
+  }
+   table{
+    margin: auto;
+ } 
+  input{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    transition: 1.5s;
+  }
+
+  input:focus {
+    width: 400px;
+    border: 2px solid rgb(238, 99, 157);
+    outline: none;
+  }
+
+  .carousel {
+    margin: 0 auto;
+    width: 700px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    transition: .3s ease-in-out;
+  }
+  .btn .page{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 300px;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .btn .page:nth-child(1) {
+    background-color: #81df23;
+  }
+
+  .btn .page:nth-child(2) {
+    background-color: #185379;
+  }
+  input[type=radio] {
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  .button {
+    display: flex;
+    background-color: #fff;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .button label{
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+  }
+  .button label:hover {
+    background-color: rgba(0,0,0,1);
+  }
+  #s1:checked ~ .btn{
+    transform: translateX(0);
+  }
+  #s2:checked ~ .btn{
+    transform: translateX(-350px);
+  }
+  #s3:checked ~ .btn{
+    transform: translateX(-700px);
+  }
