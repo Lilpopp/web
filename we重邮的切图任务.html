@@ -1,0 +1,255 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>切图任务</title>
+    </head>
+    <style>
+        body{margin:0;}
+        .left-nav{
+           border: 1px  solid rgb(255, 255, 255);
+           width: 255px;
+           height: 1019px;
+           float: left;
+           text-decoration-color: rgb(255, 255, 255);
+           border-bottom:none
+        }
+        .right-nav{
+            border:1px solid rgb(255, 255, 255);
+            width: 1028px;
+            height: 1019px;
+            float: left;
+        }
+        [class*="box"] {
+            border:1px solid rgb(255, 255, 255);
+            background-color:rgb(30, 41, 51);
+            border-left: none;
+            border-bottom: none;
+        }
+        .box1{
+            border-top: none;
+           height: 39px;
+           padding-left: 81px;
+           padding-top: 26px; 
+        }
+        .box2{
+            padding-left: 25px;
+            padding-top: 24px;
+           height: 61px;
+        }
+        .box3{
+           height: 752px;
+           padding-top:12px;
+        
+        }
+        .box4{
+           height: 102px;
+        }
+        .search{ 
+           height: 65px;
+           width: 1025px;
+           background-color: rgb(255, 255, 255);
+           float: left;
+        }
+        .head{
+            border: 1px  solid rgb(255, 255, 255);
+            border-bottom:none;
+            border-left: none;
+           height: 44px;
+           width: 310px;
+           background-color: rgb(255, 255, 255);
+           float: left;
+           padding-left: 30px;
+        }
+        .list{
+            border: 1px  solid rgb(255, 255, 255);
+            border-bottom:none;
+            border-left: none;
+            width: 340px;
+            height: 909px;
+            background-color: pink;
+            float: left;
+        }
+        .team{
+            border: 1px  solid rgb(255, 255, 255);
+            border-bottom:none;
+            height: 44px;
+            width: 654px;
+            background-color: rgb(255, 255, 255);
+            float: right;
+            padding-left: 30px;
+        }
+        [class*="aside"]{
+            width: 340px;
+            height: 115px;
+            border: 1px  solid rgb(255, 255, 255);
+            border-bottom:none;
+            border-left: none;
+            background:rgb(255, 255, 255);
+        }
+        .aside1{
+            height: 90px;
+            width: 314px;
+            padding-top: 25px;
+            padding-left: 26px;
+        }
+        .aside2{
+           background-color: rgb(246, 249,255);
+        }
+        .aside3{
+            height: 90px;
+            width: 314px;
+            padding-top: 25px;
+            padding-left: 26px;
+        }
+        .aside4{
+            height: 90px;
+            width: 314px;
+            padding-top: 25px;
+            padding-left: 26px;
+        }
+        .aside5{
+            height: 90px;
+            width: 314px;
+            padding-top: 25px;
+            padding-left: 26px;
+        }
+        .aside6{
+            height: 90px;
+            width: 314px;
+            padding-top: 25px;
+            padding-left: 26px;
+        }
+        .aside7{
+            height: 90px;
+            width: 314px;
+            padding-top: 25px;
+            padding-left: 26px;
+        }
+        .aside8{
+            padding-top: 25px;
+            padding-left: 26px;
+            width: 314px;
+            height: 71px;
+        }
+        .main{
+            border: 1px  solid rgb(255, 255, 255);
+            border-bottom:none;
+        width: 684px;
+        height: 847px;
+        background-color: rgb(255, 255, 255);
+        float: right;
+        }
+        .chat{
+            border-top:1px solid rgb(255, 255, 255);
+            width: 684px;
+            height: 60px;
+            background-color: pink;
+        float: right;
+        }
+        .logo{
+            width: 88px;
+            height: 15px;
+        }
+        .touxiang{
+            width: 111px;
+            height: 36px;
+        }
+        .daohang{
+            height: 763px;
+        }
+        .search-for{
+            width: 806px;
+            height:50px;
+            position: relative;
+            top: 8px;
+        }
+        .country{
+            width: 127px;
+            height: 35px;
+        }
+        .news{
+            width: 313px;
+            height: 30px;
+            background-color: rgb(136, 150, 236);
+
+        }
+        .menber{
+            width: 623px;
+            height: 24px;
+        }
+        .as1{
+            width: 289px;
+            height: 69px;
+        }
+        .as2{
+            width: 339px;
+            height: 114px;
+        }
+        .as3{
+            width: 289px;
+            height: 69px;
+        }
+        .as4{
+            width: 289px;
+            height: 69px;
+        }
+        .as5{
+            width: 289px;
+            height: 69px;
+        }
+        .as6{
+            width: 289px;
+            height: 69px;
+        }
+        .as7{
+            width: 289px;
+            height: 69px;
+        }
+        .as8{
+            width: 288px;
+            height: 62px;
+        }
+        .chatting{
+            width: 684px;
+            height: 58px;
+        }
+        .page{
+            width: 683px;
+        height: 845px;
+        }
+        </style>
+    <body>
+        <div>
+        <div class="left-nav">
+            <div class="box1"><img class="logo" src="qianduan/LOGO.png"></div>
+            <div class="box2"><img class="touxiang" src="qianduan/name.png"></div> 
+            <div class="box3"><img class="daohang" src="qianduan/daohang.png"></div>
+            <div class="box4">1</div>
+        </div>
+        <div class="right-nav">
+            <div class="search">
+                <img class="search-for" src="qianduan/search-for.jpg"><img class="country" src="qianduan/englan.jpg">
+            </div>
+            <div class="head">
+                <img class="news" src="qianduan/news.png">
+            </div>
+            <div class="team"><img class="menber" src="qianduan/menber.png"></div>
+            <div class="list">
+               <div class=aside1><img class="as1" src="qianduan/as1.png"></div>
+               <div class=aside2><img class="as2" src="qianduan/as2.png"></div>
+               <div class=aside3><img class="as3" src="qianduan/as3.png"></div>
+               <div class=aside4><img class="as4" src="qianduan/as4.png"></div>
+               <div class=aside5><img class="as5" src="qianduan/as5.png"></div>
+               <div class=aside6><img class="as6" src="qianduan/as6.png"></div>
+               <div class=aside7><img class="as7" src="qianduan/as7.png"></div>
+               <div class=aside8><img class="as8" src="qianduan/as8.png"></div>
+               </div>
+            <div class="main"><img class="page" src="qianduan/page.png"></div>
+            <div class="chat"><img class="chatting" src="qianduan/chatting.png"></div>
+        </div>
+        </div>
+    </body>
+    </html>
