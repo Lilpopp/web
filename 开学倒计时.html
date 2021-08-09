@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倒计时</title>
+</head>
+<body>
+	<div id="jishi"></div>
+</body>
+<script>
+	var jishi = document.getElementById("jishi");
+	var time; 
+	// console.log(time);
+	time = setInterval(function() {
+
+		var d = new Date();
+		var hours = d.getHours();
+		var mins = d.getMinutes();
+		var send = d.getSeconds();
+		var milli = d.getMilliseconds();
+
+		var now1 = d.getTime();
+		//console.log(now1); 
+
+		var f = new Date("2021/09/05")
+		var now2 = f.getTime();
+		//console.log(now2)	//获取1970.07.01.0.0.0到2020年1月1日0点0分的时间戳；
+
+		var cha = now2 - now1;
+		//console.log(cha) //获取 本地时间到2020年1月1日0点0分还有多少毫秒。
+		var d = Math.floor(cha / 1000 / 60 / 60 / 24); //转换成天数,向下取整
+
+		var h = 23 - hours; //小时 减去当前小时
+
+		var m = 59 - mins; //分钟 减去当前分
+
+		var s = 59 - send; //秒减去当前秒
+
+		var hs = 999 - milli; 
+		if (cha == 0) {    //当两个日期直接的差值为0 时，清除计时器。
+			clearInterval(time);
+		}
+		h < 10 ? (h = "0" + h) : h;
+		m < 10 ? (m = "0" + m) : m;
+		s < 10 ? (s = "0" + s) : s;
+        if (d == 10) {
+            jishi.style.color = myrgb();	
+        }
+		jishi.innerHTML = "现在距离开学：" + d + "天" + h + "小时" + m + "分钟" + s + "秒" ;
+       
+	});
+   
+	function random(max, min) {
+		return Math.round(Math.random() * (max - min) + min);
+	}
+	function myrgb(){
+	    var r = random(0,255).toString(16); //转换成16进制
+	    var g = random(0,255).toString(16);
+	    var b = random(0,255).toString(16);
+	    return "#"+createZero(r)+createZero(g)+createZero(b);
+	}
+	function createZero(n){
+	    if(n.length < 2){
+	        return "0"+n;
+	    }else{
+	        return n;
+	    }
+	}
+</script>
